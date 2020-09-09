@@ -46,5 +46,9 @@ public class DataLoader implements ApplicationRunner {
         fileRepository.save(document1);
         File document2 = new File("licence copy", "pdf", 500, important);
         fileRepository.save(document2);
+        neil.addFolder(important);
+        john.addFolder(documents);
+        photos.addFile(document1);
+        important.addFile(document2);
     }
 }
